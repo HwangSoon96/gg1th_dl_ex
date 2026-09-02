@@ -1,0 +1,25 @@
+# Python virtual environment
+.venv/
+__pycache__/
+*.py[cod]
+
+# Editor / IDE
+.vscode/
+
+# Machine-specific env (GPU 라이브러리 절대경로 자동생성 파일)
+.env
+
+# 학습 결과물 (재생성 가능)
+models/
+preprocessor/
+
+# 대용량 데이터셋 / 이미지 (다운로드·재생성 가능, GitHub 100MB 제한 초과분 포함)
+image_data/
+
+# datas_dnn: 작은 CSV만 추적하고 나머지(zip, 이미지, 추출 폴더)는 제외
+datas_dnn/*
+!datas_dnn/*.csv
+
+# OS
+.DS_Store
+Thumbs.db
